@@ -2,6 +2,7 @@
 #define ENGINE
 
 #include <SDL2/SDL.h>
+#include "../handlers/eventHandler.h"
 
 class Engine {
 public:
@@ -17,6 +18,7 @@ private:
     SDL_Window* window;
     SDL_Renderer* renderer;
     bool running;
+    EventHandler eventHandler;
 };
 
 #endif

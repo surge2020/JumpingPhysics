@@ -15,7 +15,7 @@ Engine::Engine()
 
 void Engine::initialize()
 {
-
+    eventHandler.initialize(&running);
 }
 
 bool Engine::getRunning()
@@ -25,7 +25,7 @@ bool Engine::getRunning()
 
 void Engine::events()
 {
-
+    eventHandler.input();
 }
 
 void Engine::logic()
