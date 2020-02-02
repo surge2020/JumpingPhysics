@@ -3,6 +3,7 @@
 
 #include <SDL2/SDL.h>
 #include "../handlers/eventHandler.h"
+#include "../handlers/renderHandler.h"
 
 class Engine {
 public:
@@ -19,6 +20,7 @@ private:
     SDL_Renderer* renderer;
     bool running;
     EventHandler eventHandler;
+    RenderHandler renderHandler;
 };
 
 #endif

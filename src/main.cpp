@@ -9,6 +9,7 @@ int main()
         engine.logic();
         engine.update();
         engine.render();
+        SDL_Delay(1000/60);
     }
     engine.clean();
     return 0;

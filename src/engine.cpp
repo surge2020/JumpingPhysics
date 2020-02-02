@@ -16,6 +16,7 @@ Engine::Engine()
 void Engine::initialize()
 {
     eventHandler.initialize(&running);
+    renderHandler.initialize(renderer);
 }
 
 bool Engine::getRunning()
@@ -40,10 +41,11 @@ void Engine::update()
 
 void Engine::render()
 {
-
+    renderHandler.render();
 }
 
 void Engine::clean()
 {
-
+    SDL_DestroyWindow(window);
+    SDL_DestroyRenderer(renderer);
 }
